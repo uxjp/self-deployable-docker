@@ -14,3 +14,6 @@ clean-docker:
 
 hello-img-run: clean-docker image
 	docker run -v /var/run/docker.sock:/var/run/docker.sock hestia --sleep 3 -- run hello-world
+
+gsolad: clean-docker image
+	./gsolad_run.sh
