@@ -1,6 +1,5 @@
 #!/bin/bash
 
-LOGIN=$1
-PASSWORD=$2
+source ./app/.env
 
 docker login registry.gitlab.com -u $LOGIN -p $PASSWORD
