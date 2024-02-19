@@ -34,7 +34,9 @@ jobs:
           cd ouroborus
           pwd
           gem build ouroborus.gemspec
+          ls
           echo "sources are "
           gem sources
           echo ">>>>>>>>>>>"
+          gem push ouroborus-0.0.2.gem
           # gem push https://rubygems.pkg.github.com/uxjp/self-deployable-docker ouroborus-0.0.2.gem
