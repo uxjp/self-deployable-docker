@@ -27,7 +27,10 @@ jobs:
           cd ouroborus
           pwd
           mkdir -p ~/.gem
-          ls -a ~
+          ls -a ~/.gem
+          ls -a ~/.gemrc
+
+
 
           #echo ":github: Bearer ${{ secrets.GITHUB_TOKEN }}" > .gem/credentials
           #ls -a
