@@ -27,10 +27,10 @@ jobs:
           cd ouroborus
           pwd
           mkdir -p ~/.gem
+          echo -e "---\n:github: Bearer ${{ secrets.GITHUB_TOKEN }}\n:rubygems_api_key: ${{ secrets.RUBYGEMS_API_KEY }}" > ~/.gem/credentials
           ls -a ~
           ls -a ~/.gem
-          ls -a ~/.gemrc
-          cat ~/.gemrc
+          cat ~/.gem/credentials
 
 
 
