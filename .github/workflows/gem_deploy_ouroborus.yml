@@ -21,11 +21,9 @@ jobs:
         with:
           ruby-version: 3.0 
 
-      - name: 
+      - name: publish gem
         run: |
-          ls
           pwd
           cd ouroborus
-          pwd
+          gem build ouroborus.gemspec
           ls
-          ruby --version
