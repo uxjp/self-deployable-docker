@@ -29,7 +29,7 @@ jobs:
           mkdir -p ~/.gem
           ls -a ~
 
-          echo ":github: Bearer ${{ secrets.GITHUB_TOKEN }}" > .gem/credentials
-          ls -a
+          #echo ":github: Bearer ${{ secrets.GITHUB_TOKEN }}" > .gem/credentials
+          #ls -a
           # gem build ouroborus.gemspec
           # gem push --key github --host https://rubygems.pkg.github.com/uxjp/self-deployable-docker ouroborus*.gem
