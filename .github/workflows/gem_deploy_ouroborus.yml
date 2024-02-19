@@ -20,3 +20,6 @@ jobs:
         run: |
           ls
           pwd
+          cd ouroborus
+          pwd
+          ls
