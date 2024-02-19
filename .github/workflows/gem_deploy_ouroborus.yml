@@ -21,10 +21,12 @@ jobs:
         with:
           ruby-version: 3.0 
 
-      - name: publish gem
+      - name: Publish Ouroborus Gem to GitHub Registry
         run: |
           pwd
           cd ouroborus
           gem build ouroborus.gemspec
           ls
-          cat ouroborus*.gem
+          gem push ouroborus*.gem
+        env:
+          RUBYGEMS_API_KEY: ${{ secrets.GITHUB_TOKEN }}
