@@ -29,6 +29,7 @@ jobs:
           mkdir -p ~/.gem
           ls -a ~/.gem
           ls -a ~/.gemrc
+          cat ~/.gemrc
 
 
 
