@@ -36,7 +36,7 @@ jobs:
           gem build ouroborus.gemspec
           gem sources
           echo ${{ github.actor }}
-          gem push --add https://rubygems.pkg.github.com/uxjp ouroborus*.gem
+          gem push https://rubygems.pkg.github.com/uxjp ouroborus*.gem
           gem sources
           
 
