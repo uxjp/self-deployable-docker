@@ -24,5 +24,6 @@ jobs:
 
       - name: Publish Ouroborus Gem to GitHub Registry
         run: |
+          cd ouroborus
           gem build ouroborus.gemspec
           gem push --key github --host https://rubygems.pkg.github.com/uxjp/self-deployable-docker ouroborus*.gem
