@@ -25,7 +25,7 @@ jobs:
       - name: Publish Ouroborus Gem to GitHub Registry
         run: |
           mkdir -p ~/.gem
-          echo "---\n:github: Bearer ${{ secrets.GITHUB_TOKEN }}" > ~/.gem/credentials
+          echo ":github: Bearer ${{ secrets.GITHUB_TOKEN }}" > ~/.gem/credentials
           #echo ":github: Bearer ${GH_TOKEN}" >> ~/.gem/credentials
           ls -a ~
           ls -a ~/.gem
