@@ -32,6 +32,11 @@ jobs:
           cd ouroborus
           pwd
           gem build ouroborus.gemspec
+          gem sources
+          gem sources --add https://uxjp:${{ secrets.GITHUB_TOKEN }}@rubygems.pkg.github.com/uxjp-ouroborus/
+          echo ${{ github.actor }}
+          gem sources
+          
 
 
 
