@@ -6,13 +6,14 @@ on:
       - '*'
 
 jobs:
-  sayHelloWorld:
+  publish-gem:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
 
     steps:
       - name: Print Hello World
         run: |
-          pwd
-          cd ouroborus
-          pwd
           ls
+          pwd
