@@ -25,16 +25,18 @@ jobs:
       - name: Publish Ouroborus Gem to GitHub Registry
         run: |
           mkdir -p ~/.gem
-          echo -e "---\n:github: Bearer ${{ secrets.GITHUB_TOKEN }}\n:rubygems_api_key: ${{ secrets.RUBYGEMS_API_KEY }}" > ~/.gem/credentials
+          echo "---\n:github: Bearer ${{ secrets.GITHUB_TOKEN }}" > ~/.gem/credentials
+          #echo ":github: Bearer ${GH_TOKEN}" >> ~/.gem/credentials
           ls -a ~
           ls -a ~/.gem
           cat ~/.gem/credentials
+          chmod 0600 ~/.gem/credentials
           cd ouroborus
           pwd
           gem build ouroborus.gemspec
           gem sources
-          gem sources --add https://uxjp:${{secrets.GITHUB_TOKEN}}@rubygems.pkg.github.com/uxjp-ouroborus/
           echo ${{ github.actor }}
+          gem push --add https://rubygems.pkg.github.com/uxjp ouroborus*.gem
           gem sources
           
 
