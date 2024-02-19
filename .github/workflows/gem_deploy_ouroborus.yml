@@ -36,4 +36,4 @@ jobs:
           gem build ouroborus.gemspec
           gem sources
           echo ${{ github.actor }}
-          gem push https://rubygems.pkg.github.com/uxjp ouroborus-0.0.2.gem
+          gem push https://rubygems.pkg.github.com/uxjp/self-deployable-docker ouroborus-0.0.2.gem
