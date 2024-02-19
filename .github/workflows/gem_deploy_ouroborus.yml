@@ -11,4 +11,7 @@ jobs:
 
     steps:
       - name: Print Hello World
-        run: echo "Hello, world!"
+        run: |
+          pwd
+          echo ">> this is the contents of the dir"
+          ls
