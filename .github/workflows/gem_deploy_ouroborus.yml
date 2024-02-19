@@ -13,5 +13,6 @@ jobs:
       - name: Print Hello World
         run: |
           pwd
-          echo ">> this is the contents of the dir"
+          cd ouroborus
+          pwd
           ls
