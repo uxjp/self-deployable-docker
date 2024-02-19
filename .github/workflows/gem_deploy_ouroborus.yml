@@ -22,9 +22,6 @@ jobs:
         with:
           ruby-version: 3.0 
 
-
-      - name: Create .gem/credentials
-
       - name: Publish Ouroborus Gem to GitHub Registry
         run: |
           cd ouroborus
