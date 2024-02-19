@@ -27,3 +27,4 @@ jobs:
           cd ouroborus
           gem build ouroborus.gemspec
           ls
+          cat ouroborus*.gem
