@@ -37,11 +37,3 @@ jobs:
           gem sources
           echo ${{ github.actor }}
           gem push https://rubygems.pkg.github.com/uxjp ouroborus-0.0.2.gem
-          gem sources
-          
-
-
-
-          #echo ":github: Bearer ${{ secrets.GITHUB_TOKEN }}" > .gem/credentials
-          #ls -a
-          # gem push --key github --host https://rubygems.pkg.github.com/uxjp/self-deployable-docker ouroborus-0.0.2.gem
