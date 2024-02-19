@@ -27,6 +27,7 @@ jobs:
           cd ouroborus
           pwd
           mkdir -p ~/.gem
+          ls -a ~
           ls -a ~/.gem
           ls -a ~/.gemrc
           cat ~/.gemrc
