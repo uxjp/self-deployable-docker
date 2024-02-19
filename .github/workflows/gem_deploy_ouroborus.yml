@@ -36,7 +36,7 @@ jobs:
           gem build ouroborus.gemspec
           ls
           echo "sources are "
-          gem sources --add https://rubygems.pkg.github.com/uxjp/self-deployable-docker
+          gem sources --add https://rubygems.pkg.github.com/uxjp
           gem sources
           echo ">>>>>>>>>>>"
           gem push ouroborus-0.0.2.gem
