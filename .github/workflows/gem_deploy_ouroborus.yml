@@ -24,7 +24,10 @@ jobs:
 
       - name: Publish Ouroborus Gem to GitHub Registry
         run: |
+          cd ~
           pwd
+          ls
+          
           ls
           cd ouroborus
           pwd
