@@ -2,8 +2,8 @@ name: Publish Ouroborus Gem
 
 on:
   push:
-    branches:
-      - '*'
+    tags:
+      - 'ouroborus*'
 
 jobs:
   publish-gem:
