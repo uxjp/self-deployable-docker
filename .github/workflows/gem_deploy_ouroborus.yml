@@ -26,7 +26,7 @@ jobs:
         run: |
           mkdir -p ~/.gem
           echo ":github: Bearer ${{ secrets.GITHUB_TOKEN }}" > ~/.gem/credentials
-          #chmod 0600 ~/.gem/credentials
+          chmod 0600 ~/.gem/credentials
           cd ouroborus
           gem build ouroborus.gemspec
           gem push --key github --host https://rubygems.pkg.github.com/uxjp ouroborus-*.gem
