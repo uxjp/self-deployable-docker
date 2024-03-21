@@ -117,6 +117,8 @@ module Ouroborus
     def startCommand(&block)
       replaceable = Args.new
       replaceable << "docker" << as_args
+      puts "<<<<<< START COMMAND >>>>>>"
+      puts "#{replaceable}"
       runCommand "#{replaceable}", &block
     end
 
